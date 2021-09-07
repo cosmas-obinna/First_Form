@@ -1,4 +1,10 @@
 
+<div>
+   <?php 
+   echo 'copyright ' . date('y') ?>
+</div>
+
+
 
 <!-- Optional JavaScript; choose one of the two! -->
 
