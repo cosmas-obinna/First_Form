@@ -11,21 +11,24 @@
 <form method="get" action="success.php">
     <div class="form-group">
         <label for="firstname">First Name</label>
-        <input type="text" class="form-control" id="firstname" placeholder="Enter your First Name">
+        <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Enter your First Name">
 
     </div>
     <!-- the class="form-group" is responsible for placing the input bar on a separate line
     else, the question and the answer bars would have been on the same line
     --> 
+    <!-- Take note of the fact that 'name' attribute is not compilsory in the form but;
+    with the 'name' attribute, we have the entries displayed alongside the url in the browser.
+        this is the CHRISTOS e-Xpert similarity for knowing which table you are in -->
     <div class="form-group">
         <label for="lastname">Last Name</label>
-        <input type="text" class="form-control" id="lastname">
+        <input type="text" class="form-control" id="lastname" name="lastname">
 
     </div>
     
     <div class="form-group">
         <label for="dob">Date of Birth</label>
-        <input type="text" class="form-control" id="dob">
+        <input type="text" class="form-control" id="dob" name="dob">
     </div>
     <!-- our date may appear differently in different browsers with the format above -->
     <!-- to make it uniform across browsers, we will use one of many options -->
@@ -34,7 +37,7 @@
 
     <div class="form-group">
         <label for="designation">Designation</label>
-        <select class="form-control" id="designation">
+        <select class="form-control" id="designation" name="designation">
             <option>Team Lead</option>
             <option>Regional Manager</option>
             <option>Chief Financial Officer</option>
@@ -44,16 +47,16 @@
     </div>
     <div class="form-group">
         <label for="email">Email</label>
-        <input type="email" class="form-control" id="email" aria-describedby="emailhelp"
+        <input type="email" class="form-control" id="email" name="email" aria-describedby="emailhelp"
         placeholder="Enter your Email Address">
         <small id="emailhelp" class="form-text text-muted">your email is save with us</small>
     </div>
     <div class="form-group">
         <label for="phone">Contact Number</label>
-        <input type="text" class="form-control" id="phone" aria-describedby="phonehelp">
+        <input type="text" class="form-control" id="phone" name="phone" aria-describedby="phonehelp">
         <small id="phonehelp" class="form-text text-muted">We won't share your contact with anyone</small>
     </div>
-    <button type="submit" class="btn btn-primary btn-block">Submit</button>
+    <button type="submit" name="submit" class="btn btn-primary btn-block">Submit</button>
 </form>
 
 <br/>
