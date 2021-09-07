@@ -4,7 +4,7 @@
 
 ?>
 
-    <h1>This is the test App to link to my DB for the first time </h1><br/>
+    <h1 class="text-center">This is the test App to link to my DB for the first time </h1><br/>
     <h3>Kindly fill the form below and don't forget to leave us a review</h3><br/>
     <h2 class="text-center"> Registration form </h2>
 
@@ -25,7 +25,7 @@
     
     <div class="form-group">
         <label for="dob">Date of Birth</label>
-        <input type="date" class="form-control" id="dob">
+        <input type="text" class="form-control" id="dob">
     </div>
     <!-- our date may appear differently in different browsers with the format above -->
     <!-- to make it uniform across browsers, we will use one of many options -->
@@ -53,10 +53,15 @@
         <input type="text" class="form-control" id="phone" aria-describedby="phonehelp">
         <small id="phonehelp" class="form-text text-muted">We won't share your contact with anyone</small>
     </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="submit" class="btn btn-primary btn-block">Submit</button>
 </form>
 
-
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 <?php include_once 'include/footer.php'?>
 
 
