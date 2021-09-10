@@ -8,7 +8,7 @@
     <h3>Kindly fill the form below and don't forget to leave us a review</h3><br/>
     <h2 class="text-center"> Registration form </h2>
 
-<form method="get" action="success.php">
+<form method="post" action="success.php"> <!-- method 'get' is to get, while 'post' is to post -->
     <div class="form-group">
         <label for="firstname">First Name</label>
         <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Enter your First Name">
@@ -17,9 +17,10 @@
     <!-- the class="form-group" is responsible for placing the input bar on a separate line
     else, the question and the answer bars would have been on the same line
     --> 
-    <!-- Take note of the fact that 'name' attribute is not compilsory in the form but;
+    <!-- Take note of the fact that 'name' attribute is not compulsory in the form but;
     with the 'name' attribute, we have the entries displayed alongside the url in the browser.
         this is the CHRISTOS e-Xpert similarity for knowing which table you are in -->
+    <!-- Please Note: this is not fully advisable when username and password is applied-->
     <div class="form-group">
         <label for="lastname">Last Name</label>
         <input type="text" class="form-control" id="lastname" name="lastname">
@@ -58,7 +59,8 @@
     </div>
     <button type="submit" name="submit" class="btn btn-primary btn-block">Submit</button>
 </form>
-
+<!-- To get the result of the form printed for view after submitted
+     Go to the success page for the code used -->
 <br/>
 <br/>
 <br/>
