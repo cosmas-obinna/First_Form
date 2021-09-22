@@ -1,6 +1,7 @@
 <?php 
     $title ='HomePage';
     include_once 'include/header.php';
+    include_once 'db/config.php';
 
 ?>
 
